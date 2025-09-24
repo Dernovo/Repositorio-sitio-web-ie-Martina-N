@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
     margin: 70px;
     margin-top: 0;
     padding: 2em;
-    background-color: #e2d3ff;
+    background-color: #F1DFF6;
 }
 
 h1,
 h2 {
     font-family: 'Times New Roman', Times, serif;
-    color: #7328a9;
+    color: #B963D6;
+    margin-left: 30px;
 }
 
 h3 {
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    color: #e2d3ff;
+    color: #F1DFF6;
     font-size: 16px;
     justify-content: center;
 }
@@ -28,10 +29,20 @@ h4 {
 }
 
 h5 {
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight: lighter;
-color:#2a013b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: #2a013b;
 
+}
+
+.left-text {
+    text-align: left;
+    /* Aligns text to the left */
+    margin-left: 30px;
+    /* Optional: adds some space from the left edge */
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    color: #2a013b;
 }
 
 /* contenedor principal */
@@ -51,14 +62,14 @@ color:#2a013b;
     justify-content: center;
 }
 
-.intro a {
+.left-text a {
     align-self: center;
     margin-top: 1em;
 
 }
 
-.intro button {
-    font-family: 'Space Mono';
+.left-text button {
+    font-family: 'Bitcount Prop Double Ink';
     font-size: 1em;
     padding: 15px, 45px;
     margin-top: 30px;
@@ -69,7 +80,7 @@ color:#2a013b;
     border-radius: 50px;
 }
 
-.intro button:hover {
+.left-text button:hover .stars{
     background: #2a013b;
     color: #b963d6;
 }
@@ -90,14 +101,17 @@ color:#2a013b;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5em;
+    margin-right: 30px;
 }
 
 /*tarjeta*/
 
 .tarjeta {
-    background-color:#2a013b;
-    border-radius: 8px;
+    background-color: #2a013b;
+    border-radius: 10px;
     overflow: hidden;
+    width: 150px;
+    /* or any desired size */
 
 }
 
