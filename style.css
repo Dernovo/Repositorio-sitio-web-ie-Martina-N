@@ -38,10 +38,11 @@ h5 {
 
 }
 
+/*texto centrado, nombre antiguo*/
+
 .left-text {
     display: block;
     text-align: center;
-    margin-left: 30px;
     margin-top: 0%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
@@ -55,7 +56,6 @@ h5 {
 }
 
 /* contenedor principal */
-/* Main grid container */
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -63,12 +63,14 @@ h5 {
     gap: 5em;
     align-items: start;
     padding: 2em;
+     place-items: center;
 }
 
 /* Text content inside the grid */
 .left-text p {
     width: 700px;
     align-self: center;
+       place-items: center;
 }
 
 /* Shared button styles */
@@ -82,7 +84,7 @@ h5 {
     color: #F1DFF6;
     cursor: pointer;
     border-radius: 5px;
-
+    align-items: center;
     display: block;
     width: fit-content;
     margin: 30px auto 0;
@@ -137,7 +139,7 @@ h5 {
 
 .tarjeta {
     background-color: #2a013b;
-    border-radius: 10px;
+    border-radius: 30px;
     overflow: hidden;
     width: 150px;
     align-self: center;
