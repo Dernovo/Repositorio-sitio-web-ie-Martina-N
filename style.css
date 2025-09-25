@@ -36,12 +36,16 @@ h5 {
 }
 
 .left-text {
+    display: block;
     text-align: left;
-    /* Aligns text to the left */
     margin-left: 30px;
-    /* Optional: adds some space from the left edge */
-    font-family: 'Open Sans';
+    margin-top: 0%;
+    font-family: 'Georgia', Times New Roman, Times, serif;
     font-weight: lighter;
+    font-size: small;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    width: 100%;
     color: #2a013b;
 }
 
@@ -63,26 +67,80 @@ h5 {
 }
 
 .left-text a {
-    align-self: center;
-    margin-top: 1em;
+    display: block;
+    align-self: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
-.left-text button {
-    font-family: 'Bitcount Prop Double Ink';
-    font-size: 1em;
-    padding: 15px, 45px;
-    margin-top: 30px;
+/*botones */
+
+.button-casiopea {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding: 20px 30px;
+    margin-top: 25px;
     border: none;
     background-color: #b963d6;
-    color: #2a013b;
+    color: #F1DFF6;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
-.left-text button:hover .stars{
+
+.button-casiopea:hover {
     background: #2a013b;
     color: #b963d6;
+}
+
+.button-wiki {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding: 20px 30px;
+    margin-top: 25px;
+    border: none;
+    background-color: #9646C0;
+    color: #F1DFF6;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.button-wiki:hover {
+    background: #2a013b;
+    color: #b963d6;
+}
+
+.button-info {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    padding: 20px 30px;
+    margin-top: 25px;
+    border: none;
+    background-color: #7328A9; 
+    color: #F1DFF6;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-info:hover {
+    background: #2a013b;
+    color: #b963d6;
+}
+
+.button-casiopea,
+.button-info,
+.button-wiki {
+    display: block;
+    /* Stack them vertically */
+    width: fit-content;
+    /* Optional: keeps button size to content */
+    margin: 20px auto;
+    /* Adds space and centers */
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .intro p {
