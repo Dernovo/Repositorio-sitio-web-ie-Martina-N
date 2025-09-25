@@ -6,13 +6,14 @@ body {
     margin-top: 0;
     padding: 2em;
     background-color: #F1DFF6;
+    text-align: center;
+    place-items: center;
 }
 
 h1,
 h2 {
     font-family: 'Times New Roman', Times, serif;
-    color: #B963D6;
-    margin-left: 30px;
+    color: #9646C0;
 }
 
 h3 {
@@ -20,7 +21,7 @@ h3 {
     font-weight: bolder;
     color: #F1DFF6;
     font-size: 16px;
-    justify-content: center;
+    text-align: center;
 }
 
 h4 {
@@ -31,13 +32,15 @@ h4 {
 h5 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
-    color: #2a013b;
+    color: #B963D6;
+    text-align: center;
+    place-items: center;
 
 }
 
 .left-text {
     display: block;
-    text-align: left;
+    text-align: center;
     margin-left: 30px;
     margin-top: 0%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -47,47 +50,50 @@ h5 {
     letter-spacing: 0.5px;
     width: 100%;
     color: #2a013b;
+    align-self: center;
+    place-items: center;
 }
 
 /* contenedor principal */
-
-#container {
+/* Main grid container */
+.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* Three equal columns */
     gap: 5em;
     align-items: start;
+    padding: 2em;
 }
 
-/* contenedor intro */
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Text content inside the grid */
+.left-text p {
+    width: 700px;
+    align-self: center;
 }
 
-.left-text a {
-    display: block;
-    align-self: left;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-}
-
-/*botones */
-
-.button-casiopea {
+/* Shared button styles */
+.button-casiopea,
+.button-info,
+.button-wiki {
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     padding: 20px 30px;
-    margin-top: 25px;
     border: none;
-    background-color: #b963d6;
     color: #F1DFF6;
     cursor: pointer;
     border-radius: 5px;
+
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0;
+    text-align: center;
+    text-decoration: none;
 }
 
+/* Individual button colors */
+.button-casiopea {
+    background-color: #b963d6;
+}
 
 .button-casiopea:hover {
     background: #2a013b;
@@ -95,17 +101,8 @@ h5 {
 }
 
 .button-wiki {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
-    padding: 20px 30px;
-    margin-top: 25px;
-    border: none;
     background-color: #9646C0;
-    color: #F1DFF6;
-    cursor: pointer;
-    border-radius: 5px;
 }
-
 
 .button-wiki:hover {
     background: #2a013b;
@@ -113,15 +110,7 @@ h5 {
 }
 
 .button-info {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
-    padding: 20px 30px;
-    margin-top: 25px;
-    border: none;
-    background-color: #7328A9; 
-    color: #F1DFF6;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: #7328A9;
 }
 
 .button-info:hover {
@@ -129,37 +118,19 @@ h5 {
     color: #b963d6;
 }
 
-.button-casiopea,
-.button-info,
-.button-wiki {
-    display: block;
-    /* Stack them vertically */
-    width: fit-content;
-    /* Optional: keeps button size to content */
-    margin: 20px auto;
-    /* Adds space and centers */
-    margin-top: 30px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.intro p {
-    font-family: 'Open Sans';
-    text-align: justify;
-    line-height: 1.5;
-}
 
 
 .proyectos {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .galeria {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5em;
-    margin-right: 30px;
+    align-self: center;
 }
 
 /*tarjeta*/
@@ -169,6 +140,7 @@ h5 {
     border-radius: 10px;
     overflow: hidden;
     width: 150px;
+    align-self: center;
     /* or any desired size */
 
 }
